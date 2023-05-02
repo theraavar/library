@@ -24,3 +24,16 @@ Library.prototype.remove = function(book) {
 Library.prototype.getCollection = function() {
     return this.collection;
 }
+
+let library;
+function init() {
+    library = new Library;
+}
+init;
+
+let eragon = new Book("Eragon", "Christopher Paolini", 2002, 509, true);
+let eldest = new Book("Eldest", "Christopher Paolini", 2005, 694, true)
+
+library.add(eragon);
+library.add(eldest);
+console.log(library.getCollection);
